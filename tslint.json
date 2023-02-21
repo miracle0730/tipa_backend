@@ -1,0 +1,33 @@
+{
+    "linterOptions": {
+        "exclude": ["node_modules/**/*"]
+    },
+    "extends": [
+        "tslint-consistent-codestyle",
+        "tslint-sonarts"
+    ],
+    "rules": {
+        "no-commented-code": false,
+        "no-duplicate-string": false,
+        "prefer-immediate-return": false,
+        "max-line-length": false,
+        "object-literal-sort-keys": false,
+        "no-nested-template-literals": false,
+        "max-union-size": false,
+        "no-identical-functions": false,
+        "promise-function-async": true,
+        "no-inverted-boolean-check": {
+            "severity": "warning"
+        },
+        "cognitive-complexity": {
+            "severity": "warning"
+        },
+        "no-big-function": {
+            "severity": "warning"
+        },
+        "quotemark": [
+            true,
+            "single"
+        ]
+    }
+}
