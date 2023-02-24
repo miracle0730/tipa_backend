@@ -1,7 +1,7 @@
 import { inject, injectable } from 'inversify';
-import { IUseCase } from '../../domain/IUseCase';
+import { IUseCase } from '../IUseCase';
 import { TYPES } from '../../container';
-import { ILogger } from '../../domain/ILogger';
+import { ILogger } from '../ILogger';
 import { SettingsEntity } from './SettingsEntity';
 import { ISettingsRepository, SettingsCriteria } from './ISettingsRepository';
 

@@ -5,9 +5,9 @@ import * as slonikUtilities from 'slonik-utilities';
 import moment = require('moment');
 import * as _ from 'lodash';
 import { UpdateQueryBuilder } from '../queryBuilder/UpdateQueryBuilder';
-import { ISettingsRepository, SettingsCriteria } from '../../settings/ISettingsRepository';
-import { SettingsEntity } from '../../settings/SettingsEntity';
-import { SettingsMap } from '../../settings/SettingsMap';
+import { ISettingsRepository, SettingsCriteria } from '../../../domain/settings/ISettingsRepository';
+import { SettingsEntity } from '../../../domain/settings/SettingsEntity';
+import { SettingsMap } from '../../../domain/settings/SettingsMap';
 
 @injectable()
 export class SettingsPgRepository implements ISettingsRepository {
