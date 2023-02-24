@@ -1,7 +1,7 @@
 import { inject, injectable } from 'inversify';
-import { IUseCase } from '../IUseCase';
+import { IUseCase } from '../../domain/IUseCase';
 import { TYPES } from '../../container';
-import { ILogger } from '../ILogger';
+import { ILogger } from '../../domain/ILogger';
 import { SettingsEntity } from './SettingsEntity';
 import { ISettingsRepository } from './ISettingsRepository';
 import _ = require('lodash');

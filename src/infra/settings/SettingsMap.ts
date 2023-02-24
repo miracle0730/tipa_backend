@@ -1,4 +1,4 @@
-import { Mapper } from '../Mapper';
+import { Mapper } from '../../domain/Mapper';
 import moment = require('moment');
 import _ = require('lodash');
 import { SettingsEntity } from './SettingsEntity';

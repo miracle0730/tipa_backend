@@ -1,4 +1,4 @@
-import { IRepository } from '../IRepository';
+import { IRepository } from '../../domain/IRepository';
 import { SettingsEntity } from './SettingsEntity';
 
 export interface ISettingsCriteria {

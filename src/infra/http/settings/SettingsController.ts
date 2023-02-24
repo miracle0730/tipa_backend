@@ -6,13 +6,13 @@ import { Authorized, Body, CurrentUser, Delete, Get, HttpCode, JsonController, P
 import { OpenAPI, ResponseSchema } from 'routing-controllers-openapi';
 import { IUseCase } from '../../../domain/IUseCase';
 import { UserEntity, UserRole } from '../../../domain/user/UserEntity';
-import { SettingsGetAllUseCase } from '../../../domain/Settings/SettingsGetAllUseCase';
-import { SettingsEntity } from '../../../domain/Settings/SettingsEntity';
-import { SettingsCreateUseCase } from '../../../domain/Settings/SettingsCreateUseCase';
-import { SettingsUpdateUseCase } from '../../../domain/Settings/SettingsUpdateUseCase';
-import { SettingsRemoveUseCase } from '../../../domain/Settings/SettingsRemoveUseCase';
-import { SettingsCreateDto, SettingsDto, SettingsUpdateDto } from '../../../domain/Settings/SettingsDto';
-import { SettingsMap } from '../../../domain/Settings/SettingsMap';
+import { SettingsGetAllUseCase } from '../../settings/SettingsGetAllUseCase';
+import { SettingsEntity } from '../../settings/SettingsEntity';
+import { SettingsCreateUseCase } from '../../settings/SettingsCreateUseCase';
+import { SettingsUpdateUseCase } from '../../settings/SettingsUpdateUseCase';
+import { SettingsRemoveUseCase } from '../../settings/SettingsRemoveUseCase';
+import { SettingsCreateDto, SettingsDto, SettingsUpdateDto } from '../../settings/SettingsDto';
+import { SettingsMap } from '../../settings/SettingsMap';
 
 
 @injectable()
