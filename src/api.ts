@@ -32,7 +32,7 @@ import { IProductRepository } from './domain/product/IProductRepository';
 import { IProductImageRepository } from './domain/image/product/IProductImageRepository';
 import { PresignUploadController } from './infra/http/presign-upload/PresignUploadController';
 import { IThicknessRepository } from './domain/thickness/IThicknessRepository';
-import { ISettingsRepository } from './domain/settings/ISettingsRepository';
+import { ISettingsRepository } from './infra/settings/ISettingsRepository';
 import { ThicknessPgRepository } from './infra/database/repository/ThicknessPgRepository';
 import { SettingsPgRepository } from './infra/database/repository/SettingsPgRepository';
 import { ThicknessController } from './infra/http/thickness/ThicknessController';
