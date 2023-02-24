@@ -1,18 +1,18 @@
 import { inject, injectable } from 'inversify';
-import { Controller } from '@/infra/http/Controller';
-import { ILogger } from '@/domain/ILogger';
-import { TYPES } from '@/container';
+import { Controller } from '../Controller';
+import { ILogger } from '../../../domain/ILogger';
+import { TYPES } from '../../../container';
 import { Authorized, Body, CurrentUser, Delete, Get, HttpCode, JsonController, Param, Post, Put, HttpError } from 'routing-controllers';
 import { OpenAPI, ResponseSchema } from 'routing-controllers-openapi';
-import { IUseCase } from '@/domain/IUseCase';
-import { UserEntity, UserRole } from '@/domain/user/UserEntity';
-import { SettingsGetAllUseCase } from '@/domain/Settings/SettingsGetAllUseCase';
-import { SettingsEntity } from '@/domain/Settings/SettingsEntity';
-import { SettingsCreateUseCase } from '@/domain/Settings/SettingsCreateUseCase';
-import { SettingsUpdateUseCase } from '@/domain/Settings/SettingsUpdateUseCase';
-import { SettingsRemoveUseCase } from '@/domain/Settings/SettingsRemoveUseCase';
-import { SettingsCreateDto, SettingsDto, SettingsUpdateDto } from '@/domain/Settings/SettingsDto';
-import { SettingsMap } from '@/domain/Settings/SettingsMap';
+import { IUseCase } from '../../../domain/IUseCase';
+import { UserEntity, UserRole } from '../../../domain/user/UserEntity';
+import { SettingsGetAllUseCase } from '../../../domain/Settings/SettingsGetAllUseCase';
+import { SettingsEntity } from '../../../domain/Settings/SettingsEntity';
+import { SettingsCreateUseCase } from '../../../domain/Settings/SettingsCreateUseCase';
+import { SettingsUpdateUseCase } from '../../../domain/Settings/SettingsUpdateUseCase';
+import { SettingsRemoveUseCase } from '../../../domain/Settings/SettingsRemoveUseCase';
+import { SettingsCreateDto, SettingsDto, SettingsUpdateDto } from '../../../domain/Settings/SettingsDto';
+import { SettingsMap } from '../../../domain/Settings/SettingsMap';
 
 
 @injectable()
