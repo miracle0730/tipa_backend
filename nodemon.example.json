@@ -1,0 +1,43 @@
+{
+    "ignore": [
+        ".git",
+        "node_modules",
+        "build/*"
+    ],
+    "verbose": false,
+    "env": {
+        "APP_NAME": "TIPA API",
+        "LOG_LEVEL": "verbose",
+        "NODE_ENV": "production",
+        "ENVIRONMENT": "master",
+        "PORT": "3000",
+        "JWT_SECRET": "REPLACE_WITH_SECRET",
+        "JWT_EXPIRES_IN": "1d",
+        "DATABASE_URL": "postgres://user:password@host:5432/tipa",
+        "MEDIA_BUCKET": "tipa-media",
+        "AWS_REGION": "region",
+        "AWS_KEY_ID": "aws_key_id",
+        "AWS_SECRET_KEY": "aws_secret_key",
+        "JWT_ACTIVATE_SECRET": "REPLACE_WITH_SECRET",
+        "JWT_RESET_PASSWORD_SECRET": "REPLACE_WITH_SECRET",
+        "JWT_ACTIVATE_EXPIRES_IN": "1h",
+        "JWT_RESET_PASSWORD_EXPIRES_IN": "1h",
+        "TIPA_CORP_EMAIL_DOMAIN": "@domain1,@domain2",
+        "FRONTEND_HOST": "https://host/",
+        "MAILGUN_PRIVATE_API_KEY": "mailgun_private_key",
+        "MAILGUN_DOMAIN": "domain.com",
+        "MAILGUN_HOST": "host.mailgun.net",
+        "MAILGUN_MAIL": "email@domain",
+        "ZOHO_CLIENT_ID": "zoho client id",
+        "ZOHO_CLIENT_SECRET": "zoho client secret",
+        "ZOHO_USER_IDENTIFIER": "email@domain",
+        "ZOHO_ACCESS_TOKEN": "access_token",
+        "ZOHO_REFRESH_TOKEN": "refresh_token",
+        "ZOHO_API_KEY": "zapikey",
+        "MS_OFFICE_APP_ID": " app_id",
+        "MS_OFFICE_APP_SECRET": "app_secret",
+        "MS_OFFICE_GRAPH_SCOPE_URL": "graph_scope_url",
+        "MS_OFFICE_TENANT_ID": "tenant_id",
+        "MS_OFFICE_USER_ID": "user_id"
+    }
+}
