@@ -8,7 +8,7 @@
     "api:dev": "./node_modules/.bin/nodemon -e ts --exec ts-node --project tsconfig.json ./src/api.ts",
     "api:master": "./node_modules/.bin/nodemon --config nodemon.master.json -e ts --exec 'ts-node' --project tsconfig.json ./src/api.ts",
     "copy": "copyfiles -u 1 -e './src/**/*.ts' -e './src/*.ts' './src/**/*.*' build",
-    "build": "rm -rf ./build && npm run copy && tsc --project tsconfig.json",
+    "build": "npm run copy && tsc --project tsconfig.json",
     "test": "NODE_ENV=test nodemon --config nodemon.test.json --exec 'jest --runInBand'",
     "test:watch": "NODE_ENV=test nodemon --config nodemon.test.json --exec 'jest --watchAll --runInBand'",
     "~ci:test": "NODE_ENV=test jest --colors --ci",
